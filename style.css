@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(252, 252, 252);
+    background-size: cover;
+    background-position: center;
+    backdrop-filter: blur(15px);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    height: 90%;
+    background-color: grey;
+    background-position: center;
+    background-size: cover;
+    width: 40%;
+    border-radius: 1rem;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.747);
+}
+
+section {
+    height: 90%;
+    width: 100%;
+    display: flex;
+}
+
+/* ------- */
+/* Navbar */
+/* ----- */
+
+nav {
+    height: 10%;
+    width: 100%;
+    background-color: rgba(15, 15, 15, 0.87);
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    backdrop-filter: blur(12px);
+    display: flex;
+    align-items: center;
+    padding: 14px;
+}
+
+/* search */
+
+.search {
+    background-color: rgba(58, 56, 56, 0.459);
+    display: flex;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 2rem;
+    position: relative;
+    backdrop-filter: blur(10px);
+    padding: 6px;
+    transition: 400ms ease-in;
+}
+
+.search.active {
+    width:200px;
+}
+
+.search-input {
+    height: 24px;
+    width: 120px;
+    font-size: 16px;
+    background:none;
+    color: white;
+    padding: 4px;
+    border: none;
+    outline: none;
+    border-bottom: 0.5px solid grey;
+    position: relative;
+    left: 32px;
+}
+
+.search-input:focus {
+    border-bottom: 1px solid white;
+}
+
+nav button {
+    width: 36px;
+    height: 36px;
+    padding: 4px;
+    background:none;
+    border: none;
+   
+}
+
+nav button:first-child {
+    position: absolute;
+    left: 0px;
+}
+
+.clean-btn {
+    position: absolute;
+    height: 18px;
+    width: 18px;
+    right: 7%;
+    top: 30%;
+}
+
+nav button:hover {
+    cursor: pointer;
+}
+
+.hide {
+    display: none;
+}
+/* ========== */
+/* Left Part */
+/* ======= */
+
+.photo {
+    width: 60%;
+    height: 100%;
+    padding: 14px;
+    text-shadow: black 1px 0 10px;
+    color: azure;
+}
+
+.city-name {
+    font-size: 4rem;
+}
+
+.status {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.weather-icon {
+    width: 40px;
+    height: 40px;
+}
+
+
+/* =========== */
+/* Right Part */
+/* ========= */
+
+.data {
+    width: 40%;
+    background-color: rgba(104, 107, 106, 0.479);
+    backdrop-filter: blur(10px);
+    border-top-right-radius: 1rem;
+    color: azure;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.data div {
+    display: flex;
+    justify-content: center;
+    height: 200px;
+}
+
+.data img {
+    width: 48px;
+    height: 54px;
+}
+
+
+
+.data h1 {
+    font-size: 3rem;
+}
+
+.data h2 {
+    font-size: 3rem;
+}
+
+

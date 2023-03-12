@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Weather App</title>
+  </head>
+  <body>
+    <main>
+      <section>
+        <div class="photo">
+          <h1 class="city-name"></h1>
+          <div class="status">
+            <img src="" alt="" class="weather-icon" />
+            <h2 class="weather-status"></h2>
+          </div>
+        </div>
+        <div class="data">
+          <div class="temps">
+            <h1 class="main-temp"></h1>
+          </div>
+          <h2>wind speed</h2>
+          <div class="wind">
+            <h1 class="wind-title"></h1>
+            <img src="/assets/wind.png" alt="wind icon">
+          </div>
+          <h2>humidity</h2>
+          <div class="humidity">
+            <h1 class="humidity-title"></h1>
+            <img src="/assets/drop.png" alt="drop icon">
+          </div>
+        </div>
+      </section>
+      <nav>
+        <div class="search">
+          <button>
+            <img
+              src="/assets/search.svg"
+              alt="search button"
+              class="search-btn"
+            />
+          </button>
+          <input type="text" class="search-input hide" />
+          <button>
+            <img
+              src="/assets/times.svg"
+              alt="close"
+              class="clean-btn hide"
+            />
+          </button>
+        </div>
+      </nav>
+    </main>
+    <!-- <input type="text" class="search-input"> -->
+    <script src="./app.js" type="module"></script>
+  </body>
+</html>
